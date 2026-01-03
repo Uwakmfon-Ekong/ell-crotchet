@@ -6,7 +6,7 @@ export default function FeaturesSection() {
           
           {/* Feature 1 */}
           <div className="flex flex-col items-center">
-            <div className="w-14 h-14 rounded-full bg-pink-100 flex items-center justify-center mb-6">
+            <div className="w-14 h-14 rounded-full bg-pink-300 flex items-center justify-center mb-6">
               <span className="text-xl">✦</span>
             </div>
             <h3 className="font-serif text-xl text-gray-900 mb-3">

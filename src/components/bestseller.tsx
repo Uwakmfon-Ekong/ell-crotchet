@@ -5,35 +5,43 @@ import { Heart } from "lucide-react"
 const products = [
   {
     id: 1,
-    category: "CARDIGANS",
-    name: "Cloud Cardigan",
+    category: "LADY'S WEAR",
+    name: "Full crochet set",
     price: "$185",
-    image: "/product1.jpg",
+    image: "/fullcrotchet.jpeg",
     colors: ["#f3d6dc", "#f1ede8", "#dfe8d8"],
   },
   {
     id: 2,
     category: "SWEATERS",
-    name: "Winter Warmth Sweater",
+    name: "Winter Sweater",
     price: "$165",
-    image: "/product2.jpg",
+    image: "/hoodie.jpeg",
     colors: ["#d8d7f2", "#f1ede8", "#dfe8d8"],
     extra: "+1",
   },
   {
     id: 3,
-    category: "SCARVES",
-    name: "Cozy Infinity Scarf",
+    category: "BEACH WEAR",
+    name: "Beach Vibes",
     price: "$65",
-    image: "/product3.jpg",
+    image: "/beach.jpeg",
     colors: ["#f3d6dc", "#d8d7f2"],
   },
   {
     id: 4,
-    category: "MITTENS",
-    name: "Alpine Mittens",
+    category: "TAPESTRIES",
+    name: "Logo Tapestry",
     price: "$45",
-    image: "/product4.jpg",
+    image: "/tapestry.jpeg",
+    colors: ["#dfe8d8"],
+  },
+   {
+    id: 5,
+    category: "UNISEX WEAR",
+    name: "Granny Square Set",
+    price: "$45",
+    image: "/grannies.jpeg",
     colors: ["#dfe8d8"],
   },
 ]
@@ -56,7 +64,7 @@ export default function BestSellersSection() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
           {products.map((product) => (
             <Link
               key={product.id}
@@ -65,7 +73,7 @@ export default function BestSellersSection() {
             >
               <div className="bg-white rounded-2xl shadow-sm transition overflow-hidden">
                 {/* Image */}
-                <div className="relative aspect-[4/5] bg-gray-100">
+                <div className="relative aspect-4/5 bg-gray-100">
                   <Image
                     src={product.image}
                     alt={product.name}
@@ -85,7 +93,7 @@ export default function BestSellersSection() {
                     {product.category}
                   </p>
 
-                  <h3 className="font-serif text-xl text-gray-900 mb-2">
+                  <h3 className="font-serif text-gray-900 mb-2">
                     {product.name}
                   </h3>
 
