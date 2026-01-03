@@ -2,6 +2,9 @@ import Link from "next/link"
 import Image from "next/image"
 import FeaturesSection from "@/components/feature"
 import Header from "@/components/header"
+import BestSellersSection from "@/components/bestseller"
+import CustomOrderCTA from "@/components/customorder"
+import Footer from "@/components/footer"
 
 export default function Home() {
   return (
@@ -50,16 +53,11 @@ export default function Home() {
       {/* CONTENT SECTIONS THAT SCROLL OVER THE FIXED BG */}
       <FeaturesSection/>
 
-      <section className="relative bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 py-32 text-center">
-          <h3 className="text-4xl font-serif mb-6 text-gray-900">
-            Custom Orders Available
-          </h3>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Choose your colors, patterns, and fit. We bring your vision to life.
-          </p>
-        </div>
-      </section>
+     <BestSellersSection />
+
+     <CustomOrderCTA />
+
+     <Footer />
     </main>
   )
 }

@@ -16,7 +16,10 @@ export const metadata: Metadata = {
   title: "Ellcrotchet | Handcrafted Crochet Pieces",
   description:
     "Discover beautifully handcrafted crochet pieces made with premium yarn. Each item is unique and made just for you.",
-}
+    icons: {
+      icon: "/ells2.png",
+    },
+  };
 
 export default function RootLayout({
   children,
