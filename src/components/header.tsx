@@ -8,10 +8,10 @@ import { Menu, X, ShoppingBag } from "lucide-react"
 export default function Header() {
   const [open, setOpen] = useState(false)
 
-  const navLinks = ["Home", "Shop", "Custom", "About", "FAQ"]
+  const navLinks = ["Home", "Shop", "Custom", "Contact"]
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
+    <header className="absolute top-0 left-0 right-0 z-50 ">
       <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between text-white">
         
         {/* Logo */}
@@ -59,7 +59,7 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       {open && (
         <div className="fixed inset-0 bg-black/40 backdrop-blur-sm z-50">
-          <div className="absolute top-0 right-0 h-full w-[80%] max-w-sm bg-white text-gray-900 p-6 flex flex-col">
+          <div className="absolute top-0 right-0 h-full w-[90%] max-w-sm bg-white text-gray-900 p-6 flex flex-col">
             
             {/* Close */}
             <div className="flex items-center justify-between mb-10">
@@ -93,7 +93,7 @@ export default function Header() {
 
             {/* Mobile CTA */}
             <Link href="/shop" onClick={() => setOpen(false)}>
-              <button className="w-full py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition">
+              <button className="w-full py-3 bg-gray-900 text-white hover:bg-gray-800 transition">
                 Shop Collection
               </button>
             </Link>

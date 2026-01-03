@@ -1,6 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Heart } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Heart } from "lucide-react";
 
 const products = [
   {
@@ -30,13 +30,13 @@ const products = [
   },
   {
     id: 4,
-    category: "TAPESTRIES",
-    name: "Logo Tapestry",
+    category: "BEADS",
+    name: "Phone Handles",
     price: "$45",
-    image: "/tapestry.jpeg",
+    image: "/beads.jpeg",
     colors: ["#dfe8d8"],
   },
-   {
+  {
     id: 5,
     category: "UNISEX WEAR",
     name: "Granny Square Set",
@@ -44,8 +44,7 @@ const products = [
     image: "/grannies.jpeg",
     colors: ["#dfe8d8"],
   },
-]
-
+];
 export default function BestSellersSection() {
   return (
     <section className="py-32 bg-white">
@@ -64,59 +63,61 @@ export default function BestSellersSection() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {products.map((product) => (
-            <Link
-              key={product.id}
-              href={`/product/${product.id}`}
-              className="group"
-            >
-              <div className="bg-white rounded-2xl shadow-sm transition overflow-hidden">
-                {/* Image */}
-                <div className="relative aspect-4/5 bg-gray-100">
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    fill
-                    className="object-cover"
-                  />
+            <div key={product.id} className="group rounded-2xl shadow-sm p-4">
+              {/* Image */}
+              <div className="relative aspect-4/5 bg-gray-100  overflow-hidden">
+                <Image
+                  src={product.image}
+                  alt={product.name}
+                  fill
+                  className="object-cover rounded-2xl transition-transform duration-500 group-hover:scale-105"
+                />
 
-                  {/* Wishlist */}
-                  <button className="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow hover:scale-105 transition">
-                    <Heart size={16} className="text-gray-700" />
-                  </button>
-                </div>
+                {/* Wishlist */}
+                <button className="absolute top-4 right-4 w-9 h-9 bg-white rounded-full flex items-center justify-center shadow hover:scale-105 transition">
+                  <Heart size={16} className="text-gray-700" />
+                </button>
 
-                {/* Content */}
-                <div className="p-6">
-                  <p className="text-xs tracking-widest text-gray-400 mb-2">
-                    {product.category}
-                  </p>
-
-                  <h3 className="font-serif text-gray-900 mb-2">
-                    {product.name}
-                  </h3>
-
-                  <p className="text-gray-700 mb-4">{product.price}</p>
-
-                  {/* Color dots */}
-                  <div className="flex items-center gap-2">
-                    {product.colors.map((color, i) => (
-                      <span
-                        key={i}
-                        className="w-4 h-4 rounded-full border"
-                        style={{ backgroundColor: color }}
-                      />
-                    ))}
-                    {product.extra && (
-                      <span className="text-xs text-gray-500">
-                        {product.extra}
-                      </span>
-                    )}
-                  </div>
+                {/* Hover CTA */}
+                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition flex items-end p-4">
+                  <Link
+                    href={`/product/${product.id}`}
+                    className="w-full text-black text-center text-sm bg-white py-2 rounded-full hover:bg-gray-100 transition"
+                  >
+                    View Product
+                  </Link>
                 </div>
               </div>
-            </Link>
+
+              {/* Content */}
+              <div className="pt-5">
+                <p className="text-xs tracking-widest text-gray-400 mb-1">
+                  {product.category}
+                </p>
+
+                <h3 className="font-serif text-gray-900">{product.name}</h3>
+
+                <p className="text-gray-700 mt-1">{product.price}</p>
+
+                {/* Color dots */}
+                <div className="flex items-center gap-2 mt-3">
+                  {product.colors.map((color, i) => (
+                    <span
+                      key={i}
+                      className="w-3.5 h-3.5 rounded-full border"
+                      style={{ backgroundColor: color }}
+                    />
+                  ))}
+                  {product.extra && (
+                    <span className="text-xs text-gray-500">
+                      {product.extra}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
           ))}
         </div>
 
@@ -131,5 +132,5 @@ export default function BestSellersSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
