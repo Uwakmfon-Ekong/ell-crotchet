@@ -14,7 +14,7 @@ export const products: Product[] = [
     name: "Chunky Knit Sweater",
     slug: "chunky-knit-sweater",
     category: "Sweaters",
-    price: 45000, // ₦45,000
+    price: 70000, // ₦70000
     images: ["/hoodie.jpeg", "/hoodie.jpeg"],
     description: "Oversized, cozy sweater in soft yarn",
   },
@@ -23,16 +23,16 @@ export const products: Product[] = [
     name: "Baby Clothing Set",
     slug: "baby-clothing-set",
     category: "Baby Wears",
-    price: 28000, // ₦28,000
+    price: 30000, // ₦30,000
     images: ["/babies.jpeg"],
     description: "Perfect for newborns, delicate and soft",
   },
   {
     id: 3,
-    name: "Wool Beanie",
+    name: "Wool Baby Beanie",
     slug: "wool-beanie",
     category: "Hats",
-    price: 18000, // ₦18,000
+    price: 10000, // ₦10,000
     images: ["/beanie.jpeg"],
     description: "Warm winter beanie in multiple colors",
   },
@@ -41,7 +41,7 @@ export const products: Product[] = [
     name: "Throw Blanket",
     slug: "throw-blanket",
     category: "Blankets",
-    price: 50000, // ₦50,000
+    price: 150000, // ₦150,000
     images: ["/blanket.jpeg"],
     description: "Large throw blanket for your home",
   },
@@ -50,7 +50,7 @@ export const products: Product[] = [
     name: "Bucket Hat",
     slug: "bucket-hat",
     category: "Hats",
-    price: 22000, // ₦22,000
+    price: 24000, // ₦24,000
     images: ["/buckethat.jpeg"],
     description: "Trendy bucket hat in pastel colors",
   },
@@ -59,7 +59,7 @@ export const products: Product[] = [
     name: "Beach Wear",
     slug: "beach-wear",
     category: "Ladies Wear",
-    price: 15000, // ₦15,000
+    price: 45000, // ₦45,000
     images: ["/beach.jpeg"],
     description: "Stylish beach wear for summer",
   },
@@ -77,7 +77,7 @@ export const products: Product[] = [
     name: "Boho Festival Top",
     slug: "boho-festival-top",
     category: "Ladies Wear",
-    price: 32000, // ₦32,000
+    price: 23000, // ₦23,000
     images: ["/top.jpeg"],
     description: "Lightweight crochet crop top for summer",
   },
@@ -86,7 +86,7 @@ export const products: Product[] = [
     name: "Pearl Drop Earrings",
     slug: "pearl-drop-earrings",
     category: "Earrings",
-    price: 12000, // ₦12,000
+    price: 10000, // ₦10,000
     images: ["/accessories.jpeg"],
     description: "Elegant crochet earrings with pearl beads",
   },
@@ -95,7 +95,7 @@ export const products: Product[] = [
     name: "Boho Phone Charm",
     slug: "boho-phone-charm",
     category: "Phone Handles",
-    price: 8000, // ₦8,000
+    price: 12000, // ₦12,000
     images: ["/beads.jpeg"],
     description: "Fun crochet phone charm accessory",
   },
@@ -104,7 +104,7 @@ export const products: Product[] = [
     name: "Woven Shoulder Bag",
     slug: "woven-shoulder-bag",
     category: "Ladies Bags",
-    price: 40000, // ₦40,000
+    price: 50000, // ₦50,000
     images: ["/tapestry.jpeg"],
     description: "Stylish crochet bag for everyday use",
   },
@@ -113,7 +113,7 @@ export const products: Product[] = [
     name: "Sleeveless Vest",
     slug: "sleeveless-vest",
     category: "Vests",
-    price: 28000, // ₦28,000
+    price: 35000, // ₦35,000
     images: ["/vest.jpeg"],
     description: "Lightweight sleeveless crochet vest",
   },
@@ -122,7 +122,7 @@ export const products: Product[] = [
     name: "Crochet Trousers",
     slug: "crochet-trousers",
     category: "Trousers",
-    price: 39000, // ₦39,000
+    price: 42000, // ₦42000
     images: ["/pinkgrannypant.jpeg"],
     description: "Comfortable and stylish crochet trousers",
   },
@@ -131,7 +131,7 @@ export const products: Product[] = [
     name: "Cross Anklet",
     slug: "cross-anklet",
     category: "Ladies Anklet",
-    price: 22000, // ₦22,000
+    price: 20000, // ₦20,000
     images: ["/crossanklet.jpeg"],
     description: "Bold crochet neckpiece for any occasion",
   },
@@ -140,7 +140,7 @@ export const products: Product[] = [
     name: "Brown Summer Top",
     slug: "brown-summer-top",
     category: "Ladies Wear",
-    price: 34000, // ₦34,000
+    price: 20000, // ₦20,000
     images: ["/browntop.jpeg"],
     description: "Elegant beaded crochet evening clutch",
   },
@@ -149,7 +149,7 @@ export const products: Product[] = [
     name: "Grey Summer Top",
     slug: "grey-summer-top",
     category: "Ladies Wear",
-    price: 34000, // ₦34,000
+    price: 18000, // ₦18,000
     images: ["/greysummertop.jpeg"],
     description: "Elegant beaded crochet evening clutch",
   },
@@ -158,7 +158,7 @@ export const products: Product[] = [
     name: "Milky Mini Bag",
     slug: "milky-mini-bag",
     category: "Ladies Bags",
-    price: 36000, // ₦36,000
+    price: 15000, // ₦15,000
     images: ["/milkybag.jpeg"],
     description: "Elegant beaded crochet evening clutch",
   },

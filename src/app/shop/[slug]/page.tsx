@@ -51,19 +51,15 @@ export default function ProductPage() {
               {product.description}
             </p>
 
-           <p className="text-2xl font-semibold mb-10">
-  {product.price.toLocaleString("en-NG", {
-    style: "currency",
-    currency: "NGN",
-    minimumFractionDigits: 0,
-  })}
-</p>
-
+            <p className="text-2xl font-semibold mb-10">
+              {product.price.toLocaleString("en-NG", {
+                style: "currency",
+                currency: "NGN",
+                minimumFractionDigits: 0,
+              })}
+            </p>
 
             <div className="flex gap-4 flex-wrap">
-             
-
-              
               <a
                 href={getWhatsAppLink({
                   name: product.name,
@@ -79,7 +75,6 @@ export default function ProductPage() {
         </div>
       </section>
 
-     
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
           {product.images.map((img, i) => (
