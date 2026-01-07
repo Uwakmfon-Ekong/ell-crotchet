@@ -7,6 +7,7 @@ import Footer from "@/components/footer";
 import CustomOrderCTA from "@/components/customorder";
 import { products } from "@/data/product";
 import { addToCart } from "@/lib/cart";
+import Image from "next/image";
 
 export default function Shop() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -39,15 +40,37 @@ export default function Shop() {
       <Header />
 
       {/* HERO */}
-      <section className="relative h-[60vh] bg-[url('/crotchet.jpeg')] bg-cover bg-center bg-fixed flex items-center">
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
-          <h1 className="font-serif text-5xl mb-4">Shop Collection</h1>
-          <p className="text-white/90 text-lg max-w-xl mx-auto">
-            Thoughtfully made crochet pieces designed to feel personal and timeless.
-          </p>
-        </div>
-      </section>
+     {/* HERO */}
+<section className="relative h-[60vh] overflow-hidden">
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <Image
+      src="/crotchet.jpeg"
+      alt="Shop background"
+      fill
+      priority
+      sizes="100vw"
+      className="
+        object-cover
+        object-[50%_35%]
+        md:object-center
+      "
+    />
+  </div>
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/60 z-[1]" />
+
+  <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center justify-center text-center text-white">
+    <div>
+      <h1 className="font-serif text-5xl mb-4">Shop Collection</h1>
+      <p className="text-white/90 text-lg max-w-xl mx-auto">
+        Thoughtfully made crochet pieces designed to feel personal and timeless.
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* PRODUCTS */}
       <section className="py-20">
