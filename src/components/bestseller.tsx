@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Heart } from "lucide-react";
+import { getWhatsAppLink } from "@/lib/whatsapp";
 
 const products = [
   {
     id: 1,
     category: "LADY'S WEAR",
     name: "Full crochet set",
-    price: "$185",
+    price: "60,000",
     image: "/fullcrotchet.jpeg",
     colors: ["#f3d6dc", "#f1ede8", "#dfe8d8"],
   },
@@ -15,7 +16,7 @@ const products = [
     id: 2,
     category: "SWEATERS",
     name: "Winter Sweater",
-    price: "$165",
+    price: "40,000",
     image: "/hoodie.jpeg",
     colors: ["#d8d7f2", "#f1ede8", "#dfe8d8"],
     extra: "+1",
@@ -24,7 +25,7 @@ const products = [
     id: 3,
     category: "BEACH WEAR",
     name: "Beach Vibes",
-    price: "$65",
+    price: "50,000",
     image: "/beach.jpeg",
     colors: ["#f3d6dc", "#d8d7f2"],
   },
@@ -32,7 +33,7 @@ const products = [
     id: 4,
     category: "BEADS",
     name: "Phone Handles",
-    price: "$45",
+    price: "3,000",
     image: "/beads.jpeg",
     colors: ["#dfe8d8"],
   },
@@ -40,7 +41,7 @@ const products = [
     id: 5,
     category: "UNISEX WEAR",
     name: "Granny Square Set",
-    price: "$45",
+    price: "60,000",
     image: "/grannies.jpeg",
     colors: ["#dfe8d8"],
   },
@@ -80,15 +81,7 @@ export default function BestSellersSection() {
                   <Heart size={16} className="text-gray-700" />
                 </button>
 
-                {/* Hover CTA */}
-                <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition flex items-end p-4">
-                  <Link
-                    href={`/product/${product.id}`}
-                    className="w-full text-black text-center text-sm bg-white py-2 rounded-full hover:bg-gray-100 transition"
-                  >
-                    View Product
-                  </Link>
-                </div>
+     
               </div>
 
               {/* Content */}

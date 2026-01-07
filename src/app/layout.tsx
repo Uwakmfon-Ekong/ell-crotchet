@@ -13,13 +13,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ellcrotchet | Handcrafted Crochet Pieces",
+  title: "EllCrochet | Handcrafted Crochet Pieces",
   description:
-    "Discover beautifully handcrafted crochet pieces made with premium yarn. Each item is unique and made just for you.",
-    icons: {
-      icon: "/ells2.png",
-    },
-  };
+    "Beautifully handcrafted crochet pieces made with premium yarn. Cozy, timeless, and made with intention.",
+  icons: {
+    icon: "/ells2.png",
+  },
+  openGraph: {
+    title: "EllCrochet | Handcrafted Crochet Pieces",
+    description:
+      "Cozy, handmade crochet pieces designed to feel personal and timeless.",
+    images: ["/crotchet.jpeg"],
+  },
+};
 
 export default function RootLayout({
   children,

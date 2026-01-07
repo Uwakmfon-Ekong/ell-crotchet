@@ -5,8 +5,17 @@ import Header from "@/components/header"
 import BestSellersSection from "@/components/bestseller"
 import CustomOrderCTA from "@/components/customorder"
 import Footer from "@/components/footer"
+import { getWhatsAppLink } from "@/lib/whatsapp"
 
 export default function Home() {
+  const whatsappNumber = "2348083193784" // replace with her real number
+  const message =
+    "Hello! I’d love to place a custom crochet order 💕"
+
+  const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    message
+  )}`
+
   return (
     <main className="relative">
       {/* HERO SECTION */}
@@ -19,7 +28,7 @@ export default function Home() {
 
         {/* HERO CONTENT */}
         <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center text-white">
-          <p className="uppercase tracking-[0.25em] text-xs mb-6 text-white/80">
+          <p className="uppercase tracking-[0.25em] text-xs mb-6 text-white/80 lg:pt-0 pt-32">
             Cozy • Handmade • Timeless
           </p>
 
@@ -41,11 +50,12 @@ export default function Home() {
               </button>
             </Link>
 
-            <Link href="/custom">
+            <Link href={whatsappLink} target="_blank">
               <button className="px-8 py-3  border border-white/40 text-white hover:bg-white/10 transition">
                 Custom Order
               </button>
             </Link>
+           
           </div>
         </div>
       </section>

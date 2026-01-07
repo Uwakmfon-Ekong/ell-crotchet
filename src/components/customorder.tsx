@@ -11,7 +11,7 @@ export default function CustomOrderCTA() {
   )}`
 
   return (
-    <section className="bg-white py-10 pb-32">
+    <section className="bg-white lg:py-10 pb-32">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <h2 className="font-serif text-4xl md:text-5xl text-gray-900 mb-6">
           Ready for Something Unique?

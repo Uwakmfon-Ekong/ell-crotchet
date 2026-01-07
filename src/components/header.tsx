@@ -37,13 +37,7 @@ export default function Header() {
             </Link>
           ))}
 
-          {/* Cart Icon */}
-          <button className="relative hover:opacity-80 transition">
-            <ShoppingBag size={20} />
-            <span className="absolute -top-2 -right-2 w-4 h-4 text-[10px] bg-white text-gray-900 rounded-full flex items-center justify-center">
-              0
-            </span>
-          </button>
+         
         </nav>
 
         {/* Mobile Menu Button */}
