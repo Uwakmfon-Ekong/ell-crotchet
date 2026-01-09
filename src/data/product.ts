@@ -14,7 +14,7 @@ export const products: Product[] = [
     name: "Chunky Knit Sweater",
     slug: "chunky-knit-sweater",
     category: "Sweaters",
-    price: 70000, // ₦70000
+    price: 60000, // ₦70000
     images: ["/hoodie.jpeg", "/hoodie.jpeg"],
     description: "Oversized, cozy sweater in soft yarn",
   },
@@ -59,7 +59,7 @@ export const products: Product[] = [
     name: "Beach Wear",
     slug: "beach-wear",
     category: "Ladies Wear",
-    price: 45000, // ₦45,000
+    price: 35000, // ₦45,000
     images: ["/beach.jpeg"],
     description: "Stylish beach wear for summer",
   },
