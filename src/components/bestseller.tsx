@@ -66,7 +66,7 @@ export default function BestSellersSection() {
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
           {products.map((product) => (
-            <div key={product.id} className="group rounded-2xl shadow-sm p-4">
+            <div key={product.id} className="group rounded-2xl shadow-sm p-4 cursor-pointer">
               {/* Image */}
               <div className="relative aspect-4/5 bg-gray-100  overflow-hidden">
                 <Image
